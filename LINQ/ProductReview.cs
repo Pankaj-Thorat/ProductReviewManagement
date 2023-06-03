@@ -10,10 +10,11 @@ namespace LINQ
     {
         public int ProductId { get; set; }
         public int UserId { get; set; }
-        public int Rating { get; set; }
+        public double Rating { get; set; }
         public string Review { get; set; }
         public bool IsLike { get; set; }
 
+        //overriding ToString Method for DisplayMethod
         public override string ToString()
         {
             return $"ProductId = {ProductId}, UserId = {UserId}, Rating = {Rating}, Review = {Review}, IsLike = {IsLike}";
