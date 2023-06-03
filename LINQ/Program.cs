@@ -47,17 +47,22 @@ namespace LINQ
             //productManagement.TopProducts(list);
             //UC3
             //for Ratings greater than 3
-            productManagement.SelectedRatings(list);
+            //productManagement.SelectedRatings(list);
+            //UC4
+            //
+            productManagement.CountOfRecords(list);
+
 
         }
         //Dispaly Method
-        public static void DisplayProduct(List<ProductReview> list)
+        /*public static void DisplayProduct(List<ProductReview> list)
         {
             foreach (ProductReview product in list)
             {
                 Console.WriteLine(product);
             }
         }
-        
+        */
+
     }
 }
