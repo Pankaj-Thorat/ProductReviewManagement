@@ -34,15 +34,20 @@ namespace LINQ
                 new ProductReview() { ProductId = 01, UserId = 18, Review = "Bad", IsLike = false, Rating = 1.5 },
                 new ProductReview() { ProductId = 02, UserId = 19, Review = "Bad", IsLike = true, Rating = 2.5 },
                 new ProductReview() { ProductId = 03, UserId = 20, Review = "Bad", IsLike = false, Rating = 1.5 },
-                new ProductReview() { ProductId = 06, UserId = 21, Review = "Good", IsLike = true, Rating = 5 },
+                new ProductReview() { ProductId = 09, UserId = 21, Review = "Good", IsLike = true, Rating = 5 },
                 new ProductReview() { ProductId = 02, UserId = 22, Review = "Good", IsLike = true, Rating = 4 },
                 new ProductReview() { ProductId = 05, UserId = 23, Review = "Bad", IsLike = false, Rating = 1 },
-                new ProductReview() { ProductId = 03, UserId = 24, Review = "Good", IsLike = true, Rating = 3.5 },
+                new ProductReview() { ProductId = 04, UserId = 24, Review = "Good", IsLike = true, Rating = 3.5 },
                 new ProductReview() { ProductId = 06, UserId = 25, Review = "Bad", IsLike = false, Rating = 2 },
             };
             //Object of ProductManagement class
             ProductManagement productManagement = new ProductManagement();
-            productManagement.TopProducts(list);
+            //UC2
+            //for top 3 ratings
+            //productManagement.TopProducts(list);
+            //UC3
+            //for Ratings greater than 3
+            productManagement.SelectedRatings(list);
 
         }
         //Dispaly Method
